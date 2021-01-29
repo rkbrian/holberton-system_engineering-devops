@@ -1,0 +1,2 @@
+#!/bin/bash
+if [[ uid == "guillaume"]]; then chown betty hello; fi
