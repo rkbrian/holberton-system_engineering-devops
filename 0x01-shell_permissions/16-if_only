@@ -1,2 +1,2 @@
 #!/bin/bash
-if [[ uid == "guillaume"]]; then chown betty hello; fi
+if [[ id == "guillaume" ]]; then chown betty hello; fi
