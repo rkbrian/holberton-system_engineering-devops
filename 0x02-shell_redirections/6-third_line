@@ -1,2 +1,2 @@
 #!/bin/bash
-less iacta | grep -C 3
+less | grep -C 3 iacta
