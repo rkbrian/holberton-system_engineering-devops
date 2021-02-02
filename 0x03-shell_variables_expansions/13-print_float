@@ -1,1 +1,2 @@
 #!/bin/bash
+prinf "%0.2\n" $NUM
