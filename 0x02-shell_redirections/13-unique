@@ -1,2 +1,2 @@
 #!/bin/bash
-uinq list
+uinq -u | sort
