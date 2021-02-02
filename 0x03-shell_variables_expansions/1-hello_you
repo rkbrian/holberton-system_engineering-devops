@@ -1,2 +1,1 @@
-#!/bin/bash
-alias user="find -printf %u" | echo "hello user"
+alias user="find -printf %u" | echo hello user
