@@ -1,1 +1,2 @@
 #!/bin/bash
+find -printf %u %h /etc/passwd
