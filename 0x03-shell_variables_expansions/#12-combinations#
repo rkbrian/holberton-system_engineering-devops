@@ -1,0 +1,3 @@
+#!/bin/bash
+printf "%s%case 
+s\n" {a..e}{a..e} | tr -d "cc"
