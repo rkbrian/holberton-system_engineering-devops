@@ -1,2 +1,2 @@
 #!/bin/bash
-grep -cR */
+find ./* -type d -print | wc -l
