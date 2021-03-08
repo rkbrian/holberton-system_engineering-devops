@@ -1,2 +1,2 @@
 #!/bin/bash
-find -printf %u %h /etc/passwd
+cut -d: -f1,6 /etc/passwd | sort
