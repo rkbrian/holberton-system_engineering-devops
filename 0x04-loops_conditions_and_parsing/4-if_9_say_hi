@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+# This script is displaying "Holberton School" 10 times, use while-loop only
+# 9th line is replaced with "Hi"
+i=0; while [ $i -le 9 ]
+do if [[ $i == 8 ]]; then echo "Hi"; else echo "Holberton School"; fi
+    ((i++))
+done
