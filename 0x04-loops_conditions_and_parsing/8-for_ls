@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+# This script is listing parts of file names in the current directory 
+# Knowledge learnt pice by pice by googling
+# Note to myself -- hashtag focus on thing "ahead of x", dollarsign curly means
+#     to capture partial string or given variable value
+for anyfile in *;  do thename=${anyfile#*-}; echo ${thename}; done;
