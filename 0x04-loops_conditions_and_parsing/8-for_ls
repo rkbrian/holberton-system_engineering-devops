@@ -1,6 +1,7 @@
 #!/usr/bin/env bash
-# This script is listing parts of file names in the current directory 
+# This script is listing part of file names in the current directory 
 # Knowledge learnt pice by pice by googling
-# Note to myself -- hashtag focus on thing "ahead of x", dollarsign curly means
-#     to capture partial string or given variable value
-for anyfile in *;  do thename=${anyfile#*-}; echo "${thename}"; done;
+# Note to myself -- hashtag focuses on each section "ahead of x", the number of
+#     hasgtag defines the position of x; dollar-sign curly means to capture
+#     partial string or given variable value.
+for anyfile in *;  do saymyname=${anyfile#*-}; echo "${saymyname}"; done
