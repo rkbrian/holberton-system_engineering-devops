@@ -3,4 +3,4 @@
 filenames="holbertonschool"; if [ -e $filenames ]; then echo "$filenames file exists";
     if [ -s $filenames ]; then echo "$filenames file is not empty"; else; echo "$filenames file is empty"; fi
     if [ -f $filenames ]; then echo "$filenames is a regular file"; fi
-else; echo "$filenames does not exist"; fi
+else; echo "$filendoes not exist
