@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 # This script is giving information about the holbertonschool file
-filenames="holbertonschool"; if [ -e $filenames ]; then echo "$filenames file exists";
-    if [ -s $filenames ]; then echo "$filenames file is not empty"; else echo "$filenames file is empty"; fi
-    if [ -f $filenames ]; then echo "$filenames is a regular file"; fi
-else echo "$filenames does not exist"; fi
+myfile="holbertonschool"; if [ -e $myfile ]; then echo "$myfile file exists";
+    if [ -s $myfile ]; then echo "$myfile file is not empty"; else echo "$myfile file is empty"; fi
+    if [ -f $myfile ]; then echo "$myfile is a regular file"; fi
+else echo "$myfile file does not exist"; fi
