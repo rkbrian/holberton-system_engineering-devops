@@ -3,5 +3,5 @@
 # display info: username, user id, home directory path for the user
 file_to_read=/etc/passwd
 while read -r text_line; do
-    echo $text_line | cut -d ":" -f 1,3,6
+    echo "$text_line" | cut -d ":" -f 1,3,6
 done < "$file_to_read"

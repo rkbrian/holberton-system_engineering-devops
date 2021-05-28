@@ -1,7 +1,0 @@
-#!/usr/bin/env bash
-# This script is displaying the content of the file /etc/passwd with trimmed information, only using while loop
-# display info: username, user id, home directory path for the user
-file=/etc/passwd
-while read -r line; do
-    echo $line | cut -d ":" -f 1,3
-done < "$file"
