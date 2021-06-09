@@ -1,6 +1,0 @@
-Host rkbrian
-     HostName 54.144.202.175
-     user ubuntu
-     PasswordAuthentication No
-     StrictHostKeyChecking No     
-     IdentityFile ~/.ssh/holberton
