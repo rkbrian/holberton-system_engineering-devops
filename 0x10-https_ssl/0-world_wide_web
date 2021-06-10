@@ -1,0 +1,19 @@
+#!/usr/bin/env bash
+# search info in sites
+
+webInfo() {
+    thingsAndIp=$(dig $2.$1 | grep -A1 'ANSWER SECTION:' | awk '{print $4,$5}')
+    record=$(echo $thingsAndIp | awk '{print $1}')
+    ip=$(echo $thingsAndIp | awk '{print $2}')
+
+    echo "The subdomain $2 is a $record record and points to $ip"
+}
+
+if [ $# -eq 1 ]; then
+    webInfo $1 www
+    webInfo $1 lb-01
+    webInfo $1 web-01
+    webInfo $1 web-02
+elif [ $# -eq 2 ]; then
+    webInfo $1 $2
+fi
