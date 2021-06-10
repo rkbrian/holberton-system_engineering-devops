@@ -19,4 +19,3 @@ replace_string="\tadd_header X-Served-By ${HOSTNAME};\n\n\terror_page 404 /error
 sed -i "s@${search_string}@${replace_string}@" /etc/nginx/sites-available/default
 
 sudo service nginx restart
-
