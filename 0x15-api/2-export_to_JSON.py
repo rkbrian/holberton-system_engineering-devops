@@ -36,7 +36,7 @@ def export_tasks_to_json(employee_id):
     with open('{}.json'.format(employee_id), 'w') as jsonFile:
         json.dump(user_dict, jsonFile)
 
-    return 0
+    return
 
 if __name__ == '__main__':
     export_tasks_to_json(sys.argv[1])

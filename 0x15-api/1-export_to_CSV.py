@@ -36,7 +36,7 @@ def save_tasks_to_csv(employee_id):
         csvwriter = csv.writer(csvFile, quoting=csv.QUOTE_ALL)
         csvwriter.writerows(all_tasks)
 
-    return 0
+    return
 
 if __name__ == '__main__':
     save_tasks_to_csv(sys.argv[1])

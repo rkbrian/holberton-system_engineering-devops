@@ -36,7 +36,7 @@ def get_employee_tasks(employee_id):
 
     for ttl in task_list:
         print('\t {}'.format(ttl))
-    return 0
+    return
 
 if __name__ == "__main__":
     get_employee_tasks(sys.argv[1])

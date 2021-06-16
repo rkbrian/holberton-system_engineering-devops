@@ -38,7 +38,7 @@ def export_all_to_json():
     with open('todo_all_employees.json', 'w') as jsonFile:
         json.dump(usersntasks, jsonFile)
 
-    return 0
+    return
 
 if __name__ == '__main__':
     export_all_to_json()
