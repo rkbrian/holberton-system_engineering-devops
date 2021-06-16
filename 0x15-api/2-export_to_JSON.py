@@ -1,8 +1,8 @@
 #!/usr/bin/python3
 """save employee task info to JSON"""
+import json
 import requests
 import sys
-import json
 
 
 def export_tasks_to_json(employee_id):

@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 """get employee task info from API"""
-import sys
 import requests
+import sys
 
 
 def get_employee_tasks(employee_id):
