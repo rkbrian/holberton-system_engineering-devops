@@ -10,12 +10,13 @@ def save_tasks_to_csv(employee_id):
     # set up vars
     user_name = ''
     all_tasks = []
+    site_string = 'https://jsonplaceholder.typicode.com/users/'
+    ustr = site_string + '{}'.format(employee_id)
+    tstr = site_string + '{}/todos'.format(employee_id)
 
     # get requests
-    usersRes = requests.get('https://jsonplaceholder\
-                            .typicode.com/users/{}'.format(employee_id))
-    todosRes = requests.get('https://jsonplaceholder\
-                            .typicode.com/users/{}/todos'.format(employee_id))
+    usersRes = requests.get(ustr)
+    todosRes = requests.get(tstr)
 
     # get json from requests
     user_name = usersRes.json().get('username')
@@ -23,7 +24,7 @@ def save_tasks_to_csv(employee_id):
 
     # file -> CSV (value,value,value...)
     for tasks in todosJson:
-        task_rows = []
+        task_rows = [employee_id]
         task_rows.append(user_name)
         task_rows.append(tasks.get('completed'))
         task_rows.append(tasks.get('title'))

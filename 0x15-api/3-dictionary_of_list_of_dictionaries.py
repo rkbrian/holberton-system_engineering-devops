@@ -5,15 +5,19 @@ import json
 
 
 def export_all_to_json():
-    """ """
+    """
+    for all users/employees and all tasks, extend
+    0-gather_data_from_an_API.py to export data in JSON format.
+    """
     # set up vars
     usersntasks = {}
+    site_string = 'https://jsonplaceholder.typicode.com/'
+    ustr = site_string + 'users'
+    tstr = site_string + 'todos'
 
     # get all json
-    userJason = requests.get('https://jsonplaceholder\
-                             .typicode.com/users').json()
-    todoJason = requests.get('https://jsonplaceholder\
-                             .typicode.com/todos').json()
+    userJason = requests.get(ustr).json()
+    todoJason = requests.get(tstr).json()
 
     user_info = {}
 
