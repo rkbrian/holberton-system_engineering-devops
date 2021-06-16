@@ -6,12 +6,14 @@ import json
 
 def export_all_to_json():
     """ """
-    #set up vars
+    # set up vars
     usersntasks = {}
 
     # get all json
-    userJason = requests.get('https://jsonplaceholder.typicode.com/users').json()
-    todoJason = requests.get('https://jsonplaceholder.typicode.com/todos').json()
+    userJason = requests.get('https://jsonplaceholder\
+                             .typicode.com/users').json()
+    todoJason = requests.get('https://jsonplaceholder\
+                             .typicode.com/todos').json()
 
     user_info = {}
 
@@ -20,7 +22,6 @@ def export_all_to_json():
 
     for tasks in todoJason:
         if usersntasks.get(tasks['userId'], False) is False:
-            # print("user added: {}".format(tasks['userId']))
             usersntasks[tasks['userId']] = []
         task_dict = {}
         task_dict['username'] = user_info[tasks['userId']]

@@ -7,13 +7,15 @@ import json
 
 def export_tasks_to_json(employee_id):
     """ """
-    #set up vars
+    # set up vars
     user_name = ''
     user_dict = {}
 
     # get requests
-    usersRes = requests.get('https://jsonplaceholder.typicode.com/users/{}'.format(employee_id))
-    todosRes = requests.get('https://jsonplaceholder.typicode.com/users/{}/todos'.format(employee_id))
+    usersRes = requests.get('https://jsonplaceholder\
+                            .typicode.com/users/{}'.format(employee_id))
+    todosRes = requests.get('https://jsonplaceholder\
+                            .typicode.com/users/{}/todos'.format(employee_id))
 
     # get json from requests
     user_name = usersRes.json().get('username')
