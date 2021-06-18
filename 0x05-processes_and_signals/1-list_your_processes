@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
-# Write a Bash script that displays a list of currently running processes.
+# Bash script that displays a list of currently running processes.
 
-ps -aux | less
+ps -auxf | less
+# note to myself: -a for all process; -u for including other users; -x for no ctrling ttys; -f for full format listing
