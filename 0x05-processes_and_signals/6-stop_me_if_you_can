@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+# No "kill" or "killall" to stop the bash script that displays To infinity and beyond indefinitely.
+
+pkill -9 4-to_infinity_and_beyond.py

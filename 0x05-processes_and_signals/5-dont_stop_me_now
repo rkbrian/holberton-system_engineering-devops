@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+# Kill to stop the bash script that displays To infinity and beyond indefinitely.
+
+kill "$(ps -auxf | grep "4-to_infinity_and_beyond")"
