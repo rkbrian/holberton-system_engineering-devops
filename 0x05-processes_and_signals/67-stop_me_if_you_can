@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+# No "kill" or "killall" to stop the bash script that displays some texts indefinitely.
+
+pkill -9 7-highlander
