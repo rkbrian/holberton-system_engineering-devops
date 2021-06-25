@@ -3,10 +3,22 @@
 #include <unistd.h>
 
 /**
+ * infinite_while - the loop function
+ * Return: 0
+ */
+int infinite_while(void)
+{
+  while (1)
+    {
+      sleep(1);
+    }
+  return (0);
+}
+/**
  * main - Function to create zomibie processes
  * Return: 0
  */
-int main()
+int main(void)
 {
   pid_t process_id;
   int i;
@@ -22,16 +34,4 @@ int main()
   infinite_while();
   return (0);
 }
-
-/**
- * infinite_while - the loop function
- * Return: 0
- */
-int infinite_while(void)
-{
-  while (1)
-    {
-      sleep(1);
-    }
-  return (0);
-}
+int infinite_while(void);
