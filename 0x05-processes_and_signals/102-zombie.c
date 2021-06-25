@@ -18,7 +18,7 @@ int infinite_while(void)
  * main - Function to create zomibie processes
  * Return: 0
  */
-int main(void)
+int main()
 {
   pid_t process_id;
   int i;
