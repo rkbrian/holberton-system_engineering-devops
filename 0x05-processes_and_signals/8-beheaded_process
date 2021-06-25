@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+# Kill to stop the bash script that displays To infinity and beyond indefinitely.
+
+kill -9 "$(pgrep -f 7-highlander)"
